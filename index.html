@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw Here</title>
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid bg-secondary">
+        <div class="row">
+            <div class="col-12 text-center pt-1 text-warning bg-light shadow" id="name">
+                <h2>Draw Your Design</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 mt-2" id="allcen">
+                <div onClick="cCC(this)" class="color-filed mx-1" style="background:lightblue;"></div>
+                <div onClick="cCC(this)" class="color-filed mx-1" style="background:lightcyan;"></div>
+                <div onClick="cCC(this)" class="color-filed mx-1" style="background:lightpink;"></div>
+                <div onClick="cCC(this)" class="color-filed mx-1" style="background:rgb(227, 62, 62);"></div>
+                <div onClick="cCC(this)" class="color-filed mx-1" style="background:orange;"></div>
+                <div onClick="cCC(this)" class="color-filed mx-1" style="background:peru;"></div>
+                <div onClick="cCC(this)" class="color-filed mx-1" style="background:khaki;"></div>
+                <div onClick="cCC(this)" class="color-filed mx-1" style="background:darkcyan;"></div>
+                <div onClick="cCC(this)" class="color-filed mx-1" style="background:coral;"></div>
+                <div onClick="cCC(this)" class="color-filed mx-1" style="background:chocolate;"></div>
+                <div onClick="cCC(this)" class="color-filed mx-1" style="background:darkgray;"></div>
+                <div onClick="cCC(this)" class="color-filed mx-1" style="background:firebrick;"></div>
+            </div>
+        </div>
+        <div class="row mt-2 shadow">
+                <canvas id="canvas" ></canvas>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mt-4" id="allcen"  >
+                <input onInput="ctx.fillStyle = this.value" type="color" class="btn ml-5" id="color-picker" value="#000fff" />
+                <input type="range" class="slider mt-1 mx-2" id="myRange" min="1" max="100" value="25" />
+                <span id="rangeValue"></span>
+            </div>
+            <div class="col-md-6 my-3" id="allcen">
+                <button id="name1" onClick="cUndo()" class="mx-3 btn btn-sm shadow btn-warning">Undo</button>
+                <button id="name1" onClick="cCanvas()" class="btn btn-sm shadow btn-danger">Clear</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<body>
+</html>

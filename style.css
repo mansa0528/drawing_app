@@ -1,0 +1,63 @@
+@import url(
+    https://fonts.googleapis.com/css?family=Sofia);
+
+/* :root {} */
+
+.color-filed{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#color-picker{
+    margin-top: -5px;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    border: 0px;
+}
+
+#canvas{
+    height: 79vh;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#name{
+    font-family: Sofia;
+    font-weight: bold;
+}
+
+#name1 {
+    font-weight: bold;
+}
+
+/* taken from w3schools */
+.slider {
+    -webkit-appearance: none; 
+    appearance: none; 
+    background: lightgrey;
+    outline: none;
+    opacity: 1; 
+    -webkit-transition: 1s;
+    transition: opacity .1s;
+    height: 6px;
+}
+
+.slider::-moz-range-thumb {
+    background: lightgrey;
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+
+#allcen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
